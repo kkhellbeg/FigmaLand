@@ -1,0 +1,67 @@
+//текст низко относительно картинки
+
+.container_solution {
+    padding: 114px 40px;
+
+    @media (max-width: 900px) {
+        padding: 62px 60px 109px;   
+    }
+}
+
+.solution__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 67px;
+
+    @media (max-width: 900px) {
+     flex-direction: column;
+     text-align: center;   
+    }
+}
+
+.solution__title {
+    margin-bottom: 37px;
+    max-width: 426px;
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 124%;
+
+    @media (max-width: 900px) {
+     margin-bottom: 17px;   
+    }
+}
+
+.solution__text {
+    margin-bottom: 37px;
+    max-width: 303px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: $secondaryColor;
+
+    @media (max-width: 900px) {
+     margin-bottom: 59px;   
+    }
+}
+
+.solution__buttons {
+    display: flex;
+    gap: 7px;
+
+    @media (max-width: 900px) {
+     flex-direction: column;
+    }
+}
+
+.solution__img {
+    img {
+        width: 762px;
+        filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.15));
+        border-radius: 5px;
+
+        @media (max-width: 900px) {
+        width: 450px;
+        }
+    }
+}

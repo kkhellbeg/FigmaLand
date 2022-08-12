@@ -1,0 +1,103 @@
+//карточки неправильной ширины
+
+.container_about {
+    padding: 111px 40px 139px;
+
+    @media (max-width: 900px) {
+     padding: 97px 50px 60px;   
+    }
+}
+
+.about__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__title {
+    margin-bottom: 105px;
+    max-width: 771px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 46px;
+
+    @media (max-width: 900px) {
+        margin-bottom: 35px;
+    }
+}
+
+.about__cards-list {
+    display: flex;
+    gap: 31px;
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+        gap: 64px;
+    }
+}
+
+.about__card {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 40px 50px;
+    background: #fff;
+    border: 1px solid #DEDEDE;
+    box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+
+    @media (max-width: 900px) {
+     align-items: center;
+     text-align: center;   
+    }
+}
+
+.card__svg {
+    margin-bottom: 30px;
+    width: 62px;
+    height: 62.62px;
+    fill: $aqua;
+
+    @media (max-width: 900px) {
+        margin-bottom: 20px;
+    }
+}
+
+.card__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 30px;
+    @media (max-width: 900px) {
+     margin-bottom: 20px;   
+    }
+}
+
+.card__text {
+    margin-top: 0;
+    margin-bottom: 30px;
+    max-width: 284px;
+    font-weight: 400;
+    font-size: 18px;
+    color: $secondaryColor;
+}
+
+.card__link {
+    font-weight: 400;
+    font-size: 15px;
+    color: $aqua;
+}
+
+.about__card:hover {
+    background: $gradient;
+    
+    .card__title,
+    .card__text,
+    .card__link {
+        color: #fff;
+    }
+
+    .card__svg {
+        fill: #fff
+    }
+}
+
